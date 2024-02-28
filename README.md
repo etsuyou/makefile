@@ -13,7 +13,7 @@
 - 5.输入指令：`./makefile/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./makefile/makefile.bat test`
 - 6.新建完成
 ## 更新说明
-### 02040228
+### 20240228
 - 增加`-help`和`-h`帮助指令
 - 增加任务完成后Mission completed提示
 ![image](https://github.com/etsuyou/makefile/assets/156873223/3b21c133-2f7f-4bf6-98d6-23a9f31cb921)
