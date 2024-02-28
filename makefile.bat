@@ -19,8 +19,9 @@ else (
   copy .\makefile\index.html .\%1
   copy .\makefile\flexible.js .\%1\js
   copy .\makefile\style.css .\%1\css  
+  echo Mission completed
 )
-echo Mission completed
+
 
 @REM del %0 
 
