@@ -16,6 +16,7 @@
 ## 更新说明
 ### 20240302
 - 增加`functions.js`文件
+- 增加font矢量图片文字文件夹
 - 增加了缺省文件名时创建`Default_Test`文件夹功能
   - ![image](https://github.com/etsuyou/makefile/assets/156873223/aa789264-ac66-439b-9c61-63eb095826e3)
 - 增加创建完成时的提示语
