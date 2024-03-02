@@ -12,7 +12,13 @@
 - 4.在vscode中新建终端，或快捷键ctrl+shift+`
 - 5.输入指令：`./makefile/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./makefile/makefile.bat test`
 - 6.新建完成
+
 ## 更新说明
+
+### 20240302
+
+增加`functions.js`文件
+
 ### 20240228
 - 增加`-help`和`-h`帮助指令
 - 增加任务完成后Mission completed提示

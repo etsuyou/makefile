@@ -18,6 +18,7 @@ else (
   cd ..\
   copy .\makefile\index.html .\%1
   copy .\makefile\flexible.js .\%1\js
+  copy .\makefile\functions.js .\%1\js
   copy .\makefile\style.css .\%1\css  
   echo Mission completed
 )
