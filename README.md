@@ -19,6 +19,9 @@
 
 - 增加`functions.js`文件
 - 增加了缺省文件名时创建`Default_Test`文件夹功能
+  - ![image](https://github.com/etsuyou/makefile/assets/156873223/aa789264-ac66-439b-9c61-63eb095826e3)
+- 增加创建完成时的提示语
+  - ![image](https://github.com/etsuyou/makefile/assets/156873223/57c866d4-d10c-45e7-83fc-6ef58b2705c0)
 
 ### 20240228
 - 增加`-help`和`-h`帮助指令
