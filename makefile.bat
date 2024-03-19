@@ -7,7 +7,7 @@ if "%1" == "" (
   echo "So, a folder called Default_Test is being created for you now"
   mkdir Default_Test
   cd Default_Test
-  mkdir html,css,js,img,font
+  mkdir html,css,js,img,font,video
   @REM echo=>index.html
   @REM echo=>./css/style.css
   cd ..\
@@ -43,7 +43,7 @@ if "%1" == "" (
     echo "Project files and folders are being created for you"
     mkdir %1
     cd %1
-    mkdir html,css,js,img,font
+    mkdir html,css,js,img,font,video
     @REM echo=>index.html
     @REM echo=>./css/style.css
     cd ..\
