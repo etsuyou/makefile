@@ -15,7 +15,8 @@ if "%1" == "" (
   copy .\makefile\iconfont.url .\Default_Test
   copy .\makefile\flexible.js .\Default_Test\js
   copy .\makefile\functions.js .\Default_Test\js
-  copy .\makefile\style.css .\Default_Test\css  
+  copy .\makefile\style.css .\Default_Test\css
+  copy .\makefile\global.css .\Default_Test\css    
   copy .\makefile\font\demo.css .\Default_Test\font
   copy .\makefile\font\demo_index.html .\Default_Test\font
   copy .\makefile\font\iconfont.css .\Default_Test\font
@@ -52,6 +53,7 @@ if "%1" == "" (
     copy .\makefile\flexible.js .\%1\js
     copy .\makefile\functions.js .\%1\js
     copy .\makefile\style.css .\%1\css  
+    copy .\makefile\global.css .\%1\css
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
     copy .\makefile\font\iconfont.css .\%1\font
