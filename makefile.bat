@@ -7,16 +7,19 @@ if "%1" == "" (
   echo "So, a folder called Default_Test is being created for you now"
   mkdir Default_Test
   cd Default_Test
-  mkdir html,css,js,img,font,video
-  @REM echo=>index.html
-  @REM echo=>./css/style.css
+  mkdir html,css,js,img,font,video,scss
   cd ..\
   copy .\makefile\index.html .\Default_Test
   copy .\makefile\iconfont.url .\Default_Test
   copy .\makefile\flexible.js .\Default_Test\js
   copy .\makefile\functions.js .\Default_Test\js
   copy .\makefile\style.css .\Default_Test\css
-  copy .\makefile\global.css .\Default_Test\css    
+  copy .\makefile\global.css .\Default_Test\css
+  copy .\makefile\scss-style.scss .\Default_Test\scss
+  copy .\makefile\scss-style.css .\Default_Test\scss
+  copy .\makefile\scss-style.css.map .\Default_Test\scss
+  copy .\makefile\scss-style.css .\Default_Test\css
+  copy .\makefile\scss-style.css.map .\Default_Test\css
   copy .\makefile\font\demo.css .\Default_Test\font
   copy .\makefile\font\demo_index.html .\Default_Test\font
   copy .\makefile\font\iconfont.css .\Default_Test\font
@@ -44,16 +47,19 @@ if "%1" == "" (
     echo "Project files and folders are being created for you"
     mkdir %1
     cd %1
-    mkdir html,css,js,img,font,video
-    @REM echo=>index.html
-    @REM echo=>./css/style.css
+    mkdir html,css,js,img,font,video,scss
     cd ..\
     copy .\makefile\index.html .\%1
     copy .\makefile\iconfont.url .\%1
     copy .\makefile\flexible.js .\%1\js
     copy .\makefile\functions.js .\%1\js
-    copy .\makefile\style.css .\%1\css  
+    copy .\makefile\style.css .\%1\css
     copy .\makefile\global.css .\%1\css
+    copy .\makefile\scss-style.scss .\%1\scss
+    copy .\makefile\scss-style.css .\%1\scss
+    copy .\makefile\scss-style.css.map .\%1\scss
+    copy .\makefile\scss-style.css .\%1\css
+    copy .\makefile\scss-style.css.map .\%1\css
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
     copy .\makefile\font\iconfont.css .\%1\font
