@@ -16,18 +16,12 @@ if "%1" == "" (
   copy .\makefile\style.css .\Default_Test\css
   copy .\makefile\global.css .\Default_Test\css
   copy .\makefile\scss-style.scss .\Default_Test\scss
-  copy .\makefile\scss-style.css .\Default_Test\scss
-  copy .\makefile\scss-style.css.map .\Default_Test\scss
-  copy .\makefile\scss-style.css .\Default_Test\css
-  copy .\makefile\scss-style.css.map .\Default_Test\css
   copy .\makefile\font\demo.css .\Default_Test\font
   copy .\makefile\font\demo_index.html .\Default_Test\font
   copy .\makefile\font\iconfont.css .\Default_Test\font
   copy .\makefile\font\iconfont.js .\Default_Test\font
   copy .\makefile\font\iconfont.json .\Default_Test\font
   copy .\makefile\font\iconfont.ttf .\Default_Test\font
-
-  
   echo Mission completed
 ) else (
   if "%1" == "-h" (
@@ -56,18 +50,13 @@ if "%1" == "" (
     copy .\makefile\style.css .\%1\css
     copy .\makefile\global.css .\%1\css
     copy .\makefile\scss-style.scss .\%1\scss
-    copy .\makefile\scss-style.css .\%1\scss
-    copy .\makefile\scss-style.css.map .\%1\scss
-    copy .\makefile\scss-style.css .\%1\css
-    copy .\makefile\scss-style.css.map .\%1\css
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
     copy .\makefile\font\iconfont.css .\%1\font
     copy .\makefile\font\iconfont.js .\%1\font
     copy .\makefile\font\iconfont.json .\%1\font
     copy .\makefile\font\iconfont.ttf .\%1\font
-
     echo Mission completed
   )
 )
-@REM del %0 
+@REM del %0
