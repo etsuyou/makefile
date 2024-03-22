@@ -8,8 +8,6 @@ if "%1" == "" (
   mkdir Default_Test
   cd Default_Test
   mkdir html,css,js,img,font,video,scss
-  @REM echo=>index.html
-  @REM echo=>./css/style.css
   cd ..\
   copy .\makefile\index.html .\Default_Test
   copy .\makefile\iconfont.url .\Default_Test
@@ -50,8 +48,6 @@ if "%1" == "" (
     mkdir %1
     cd %1
     mkdir html,css,js,img,font,video,scss
-    @REM echo=>index.html
-    @REM echo=>./css/style.css
     cd ..\
     copy .\makefile\index.html .\%1
     copy .\makefile\iconfont.url .\%1

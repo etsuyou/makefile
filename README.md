@@ -14,6 +14,8 @@
 - 5.输入指令：`./makefile/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./makefile/makefile.bat test`
   - 注：20240302以后新增缺省待新建文件夹名称默认创建`Default_Test`文件夹功能
 ## 更新说明
+### 20240322
+- 支持Scss,添加`scss`文件夹及相关文件
 ### 20240320
 - 添加`global.css`全局CSS文件
 ### 20240302
