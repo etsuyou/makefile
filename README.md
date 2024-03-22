@@ -16,6 +16,7 @@
 ## 更新说明
 ### 20240322
 - 支持Scss，添加`scss`文件夹及相关文件，添加scss中默认内容`%foo`占位
+- 增加@mixin bg($width, $height, $background_color)，避免重复书写
 ### 20240320
 - 添加`global.css`全局CSS文件
 ### 20240302
