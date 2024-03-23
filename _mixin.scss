@@ -27,9 +27,9 @@
 // flex: <flex-grow> <flex-shrink> <flex-basis>;：简写形式，同时设置 flex-grow、flex-shrink 和 flex-basis。
 @mixin flex(
   $flex_direction:row,
-  $justify_content:space-between,
+  $justify_content:center,
   $align_items:center,
-  $align_content:space-between,
+  $align_content:space-around,
   $flex_wrap:wrap
 ){
   display: flex;
