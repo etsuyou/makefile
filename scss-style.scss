@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-// 设置div色块的长宽以及背景色
-@mixin bg($width, $height, $background_color){
-  width: $width;
-  height: $height;
-  background-color: $background_color;
-}
+// 引入通用混合器
+@import "_mixin";
 
 //*****请从这里开始写SCSS*****
 // sass转换命令：

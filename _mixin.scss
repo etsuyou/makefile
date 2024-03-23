@@ -1,0 +1,15 @@
+// 设置div色块的长宽以及背景色
+// @include bg(100px, 200px)
+// @include bg(100px, 200px, red)
+// @include bg(100px, 200px, red, 20px)
+@mixin bg(
+  $width,
+  $height,
+  $background_color:transparent,
+  $border_radius:0px
+){
+  width: $width;
+  height: $height;
+  background-color: $background_color;
+  border-radius: $border_radius;
+}
