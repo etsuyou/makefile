@@ -18,6 +18,8 @@ if "%1" == "" (
   copy .\makefile\scss-style.scss .\Default_Test\scss
   copy .\makefile\_mixin.scss .\Default_Test\scss
   copy .\makefile\_mixin_abbr.scss .\Default_Test\scss
+  copy .\makefile\scss-global.scss .\Default_Test\scss
+  copy .\makefile\scss-global.css .\Default_Test\scss
   copy .\makefile\font\demo.css .\Default_Test\font
   copy .\makefile\font\demo_index.html .\Default_Test\font
   copy .\makefile\font\iconfont.css .\Default_Test\font
@@ -54,6 +56,8 @@ if "%1" == "" (
     copy .\makefile\scss-style.scss .\%1\scss
     copy .\makefile\_mixin.scss .\%1\scss
     copy .\makefile\_mixin_abbr.scss .\%1\scss
+    copy .\makefile\scss-global.scss .\%1\scss
+    copy .\makefile\scss-global.css .\%1\scss
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
     copy .\makefile\font\iconfont.css .\%1\font
