@@ -1,9 +1,45 @@
 @import "_mixin";
 
-@mixin bg($width, $height, $background_color: transparent, $border_radius: 0px) {
+@mixin bg(
+  $width,
+  $height,
+  $background_color: transparent,
+  $border_radius: 0px
+) {
   @include setBackground($width, $height, $background_color, $border_radius);
 }
 
 @mixin fbg($height, $background_color: transparent, $border_radius: 0px) {
   @include setFullWidthBackground($height, $background_color, $border_radius);
+}
+
+@mixin fc(
+  $flex_direction: row,
+  $justify_content: space-around,
+  $align_items: center,
+  $align_content: space-around,
+  $flex_wrap: wrap
+) {
+  @include setFlexCenter(
+    $flex_direction,
+    $justify_content,
+    $align_items,
+    $align_content,
+    $flex_wrap
+  );
+}
+@mixin fb(
+  $flex_direction: row,
+  $justify_content: space-between,
+  $align_items: center,
+  $align_content: space-between,
+  $flex_wrap: wrap
+) {
+  @include setFlexBetween(
+    $flex_direction,
+    $justify_content,
+    $align_items,
+    $align_content,
+    $flex_wrap
+  );
 }

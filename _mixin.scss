@@ -39,9 +39,9 @@
 // flex-shrink: <number>;：指定弹性项目的收缩比例，用于缩小超出的空间。
 // flex-basis: <length> | auto;：指定弹性项目在主轴上的初始大小。
 // flex: <flex-grow> <flex-shrink> <flex-basis>;：简写形式，同时设置 flex-grow、flex-shrink 和 flex-basis。
-@mixin flex(
+@mixin setFlexCenter(
   $flex_direction: row,
-  $justify_content: center,
+  $justify_content: space-around,
   $align_items: center,
   $align_content: space-around,
   $flex_wrap: wrap
@@ -52,4 +52,14 @@
   align-items: $align_items;
   align-content: $align_content;
   flex-wrap: $flex_wrap;
+}
+
+@mixin setFlexBetween(
+  $flex_direction: row,
+  $justify_content: space-between,
+  $align_items: center,
+  $align_content: space-between,
+  $flex_wrap: wrap
+) {
+  @include setFlexCenter($flex_direction,$justify_content,$align_items,$align_content,$flex_wrap);
 }
