@@ -1,3 +1,13 @@
+// 占位符
+%foo {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+_foo {
+  @extend %foo;
+}
+
 // 引入通用混合器
 @import "_mixin";
 @import "_mixin_abbr";
