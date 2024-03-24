@@ -1,17 +1,31 @@
-// 设置div色块的长宽以及背景色
+// 设置div色块的长宽/背景色/边框
 // @include bg(100px, 200px)
 // @include bg(100px, 200px, red)
 // @include bg(100px, 200px, red, 20px)
-@mixin bg(
+// @include bg(100px, 200px, red, 50%)
+@mixin setBackground(
   $width,
   $height,
-  $background_color:transparent,
-  $border_radius:0px
-){
+  $background_color: transparent,
+  $border_radius: 0px
+) {
   width: $width;
   height: $height;
   background-color: $background_color;
   border-radius: $border_radius;
+}
+// 设置div色块的长宽/背景色/边框
+// 默认宽度为屏幕宽度
+// @include bg(100px, 200px)
+// @include bg(100px, 200px, red)
+// @include bg(100px, 200px, red, 20px)
+// @include bg(100px, 200px, red, 50%)
+@mixin setFullWidthBackground(
+  $height,
+  $background_color: transparent,
+  $border_radius: 0px
+) {
+  @include setBackground(100%, height, $background_color, $border_radius);
 }
 
 // 弹性布局
@@ -26,12 +40,12 @@
 // flex-basis: <length> | auto;：指定弹性项目在主轴上的初始大小。
 // flex: <flex-grow> <flex-shrink> <flex-basis>;：简写形式，同时设置 flex-grow、flex-shrink 和 flex-basis。
 @mixin flex(
-  $flex_direction:row,
-  $justify_content:center,
-  $align_items:center,
-  $align_content:space-around,
-  $flex_wrap:wrap
-){
+  $flex_direction: row,
+  $justify_content: center,
+  $align_items: center,
+  $align_content: space-around,
+  $flex_wrap: wrap
+) {
   display: flex;
   flex-direction: $flex_direction;
   justify-content: $justify_content;
@@ -39,4 +53,3 @@
   align-content: $align_content;
   flex-wrap: $flex_wrap;
 }
-
