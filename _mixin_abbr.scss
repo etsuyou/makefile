@@ -31,13 +31,13 @@
 }
 
 // FlexEvenly
-@mixin fe(
+@mixin fb(
   $flex_direction: row,
-  $justify_content: space-evenly,
+  $justify_content: space-between,
   $align_items: center,
-  $align_content: space-evenly
+  $align_content: space-between
 ) {
-  @include setFlexEvenly(
+  @include setFlexBetween(
     $flex_direction,
     $justify_content,
     $align_items,

@@ -57,11 +57,11 @@
   align-content: $align_content;
 }
 
-@mixin setFlexEvenly(
+@mixin setFlexBetween(
   $flex_direction: row,
-  $justify_content: space-evenly,
+  $justify_content: space-between,
   $align_items: center,
-  $align_content: space-evenly
+  $align_content: space-between
 ) {
   @include setFlexCenter($flex_direction,$justify_content,$align_items,$align_content);
 }
