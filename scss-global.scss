@@ -1,9 +1,0 @@
-// 占位符
-%foo {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-* {
-  @extend %foo;
-}
