@@ -39,18 +39,14 @@
 // flex-shrink: <number>;：指定弹性项目的收缩比例，用于缩小超出的空间。
 // flex-basis: <length> | auto;：指定弹性项目在主轴上的初始大小。
 // flex: <flex-grow> <flex-shrink> <flex-basis>;：简写形式，同时设置 flex-grow、flex-shrink 和 flex-basis。
-%_flex{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @mixin setFlexCenter(
   $flex_direction: row,
   $justify_content: space-evenly,
   $align_items: center,
   $align_content: space-evenly
 ) {
-  @extend %_flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: $flex_direction;
   justify-content: $justify_content;
   align-items: $align_items;
