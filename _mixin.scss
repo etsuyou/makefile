@@ -16,10 +16,10 @@
 }
 // 设置div色块的长宽/背景色/边框
 // 默认宽度为屏幕宽度
-// @include bg(100px, 200px)
-// @include bg(100px, 200px, red)
-// @include bg(100px, 200px, red, 20px)
-// @include bg(100px, 200px, red, 50%)
+// @include fbg(200px)
+// @include fbg(200px, red)
+// @include fbg(200px, red, 20px)
+// @include fbg(200px, red, 50%)
 @mixin setFullWidthBackground(
   $height,
   $background_color: transparent,
@@ -39,27 +39,29 @@
 // flex-shrink: <number>;：指定弹性项目的收缩比例，用于缩小超出的空间。
 // flex-basis: <length> | auto;：指定弹性项目在主轴上的初始大小。
 // flex: <flex-grow> <flex-shrink> <flex-basis>;：简写形式，同时设置 flex-grow、flex-shrink 和 flex-basis。
+%_flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @mixin setFlexCenter(
   $flex_direction: row,
-  $justify_content: space-around,
+  $justify_content: space-evenly,
   $align_items: center,
-  $align_content: space-around,
-  $flex_wrap: wrap
+  $align_content: space-evenly
 ) {
-  display: flex;
+  @extend %_flex;
   flex-direction: $flex_direction;
   justify-content: $justify_content;
   align-items: $align_items;
   align-content: $align_content;
-  flex-wrap: $flex_wrap;
 }
 
-@mixin setFlexBetween(
+@mixin setFlexEvenly(
   $flex_direction: row,
-  $justify_content: space-between,
+  $justify_content: space-evenly,
   $align_items: center,
-  $align_content: space-between,
-  $flex_wrap: wrap
+  $align_content: space-evenly
 ) {
-  @include setFlexCenter($flex_direction,$justify_content,$align_items,$align_content,$flex_wrap);
+  @include setFlexCenter($flex_direction,$justify_content,$align_items,$align_content);
 }

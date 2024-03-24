@@ -15,31 +15,27 @@
 
 @mixin fc(
   $flex_direction: row,
-  $justify_content: space-around,
+  $justify_content: space-evenly,
   $align_items: center,
-  $align_content: space-around,
-  $flex_wrap: wrap
+  $align_content: space-evenly
 ) {
   @include setFlexCenter(
     $flex_direction,
     $justify_content,
     $align_items,
-    $align_content,
-    $flex_wrap
+    $align_content
   );
 }
-@mixin fb(
+@mixin fe(
   $flex_direction: row,
-  $justify_content: space-between,
+  $justify_content: space-evenly,
   $align_items: center,
-  $align_content: space-between,
-  $flex_wrap: wrap
+  $align_content: space-evenly
 ) {
-  @include setFlexBetween(
+  @include setFlexEvenly(
     $flex_direction,
     $justify_content,
     $align_items,
-    $align_content,
-    $flex_wrap
+    $align_content
   );
 }
