@@ -11,7 +11,6 @@
 
 @mixin fbg($height, $background_color: transparent, $border_radius: 0px) {
   @include setFullWidthBackground(
-    100%,
     height,
     $background_color,
     $border_radius
