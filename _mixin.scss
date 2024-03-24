@@ -25,7 +25,7 @@
   $background_color: transparent,
   $border_radius: 0px
 ) {
-  @include setBackground(100%, height, $background_color, $border_radius);
+  @include setBackground(100%, $height, $background_color, $border_radius);
 }
 
 // 弹性布局
