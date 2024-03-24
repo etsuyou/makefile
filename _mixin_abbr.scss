@@ -1,5 +1,6 @@
 @import "_mixin";
 
+// BackGround
 @mixin bg(
   $width,
   $height,
@@ -9,10 +10,12 @@
   @include setBackground($width, $height, $background_color, $border_radius);
 }
 
+// Full BackGround
 @mixin fbg($height, $background_color: transparent, $border_radius: 0px) {
   @include setFullWidthBackground($height, $background_color, $border_radius);
 }
 
+// FlexCenter
 @mixin fc(
   $flex_direction: row,
   $justify_content: space-evenly,
@@ -26,6 +29,8 @@
     $align_content
   );
 }
+
+// FlexEvenly
 @mixin fe(
   $flex_direction: row,
   $justify_content: space-evenly,
