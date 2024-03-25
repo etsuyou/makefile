@@ -69,10 +69,10 @@ if "%1" == "" (
     copy .\makefile\_mixin.scss .\%1\scss
     copy .\makefile\_mixin_abbr.scss .\%1\scss
     
-    copy .\makefile\_config.scss .\Default_Test\scss
-    copy .\makefile\_includes.scss .\Default_Test\scss
-    copy .\makefile\_mixin_background.scss .\Default_Test\scss
-    copy .\makefile\_mixin_flex.scss .\Default_Test\scss
+    copy .\makefile\_config.scss .\%1\scss
+    copy .\makefile\_includes.scss .\%1\scss
+    copy .\makefile\_mixin_background.scss .\%1\scss
+    copy .\makefile\_mixin_flex.scss .\%1\scss
 
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
