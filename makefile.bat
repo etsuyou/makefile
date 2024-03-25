@@ -25,6 +25,7 @@ if "%1" == "" (
   copy .\etsuyou-make\_mixin_flex.scss .\Default_Test\scss
   copy .\etsuyou-make\_unit_handler.scss .\Default_Test\scss
   copy .\etsuyou-make\_mixin_margin.scss .\Default_Test\scss
+  copy .\etsuyou-make\_mixin_position.scss .\Default_Test\scss
   copy .\etsuyou-make\font\demo.css .\Default_Test\font
   copy .\etsuyou-make\font\demo_index.html .\Default_Test\font
   copy .\etsuyou-make\font\iconfont.css .\Default_Test\font
@@ -68,6 +69,7 @@ if "%1" == "" (
     copy .\etsuyou-make\_mixin_flex.scss .\%1\scss
     copy .\etsuyou-make\_unit_handler.scss .\%1\scss
     copy .\etsuyou-make\_mixin_margin.scss .\%1\scss
+    copy .\etsuyou-make\_mixin_position.scss .\%1\scss
     copy .\etsuyou-make\font\demo.css .\%1\font
     copy .\etsuyou-make\font\demo_index.html .\%1\font
     copy .\etsuyou-make\font\iconfont.css .\%1\font

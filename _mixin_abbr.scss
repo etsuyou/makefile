@@ -69,3 +69,13 @@
 @mixin mal($margin_left: $DEFAULT_UNIT) {
   @include setMarginLeft($margin_left);
 }
+
+// PositionFixed
+// 放在右下角的悬浮按钮
+// +pof($main_page_width,6rem)
+@mixin pof(
+  $main_page_width,
+  $top_offset
+){
+  @include setPositionFixed($main_page_width, $top_offset);
+}
