@@ -24,6 +24,7 @@ if "%1" == "" (
   copy .\makefile\_mixin_background.scss .\Default_Test\scss
   copy .\makefile\_mixin_flex.scss .\Default_Test\scss
   copy .\makefile\_unit_handler.scss .\Default_Test\scss
+  copy .\makefile\_mixin_margin.scss .\Default_Test\scss
   copy .\makefile\font\demo.css .\Default_Test\font
   copy .\makefile\font\demo_index.html .\Default_Test\font
   copy .\makefile\font\iconfont.css .\Default_Test\font
@@ -66,6 +67,7 @@ if "%1" == "" (
     copy .\makefile\_mixin_background.scss .\%1\scss
     copy .\makefile\_mixin_flex.scss .\%1\scss
     copy .\makefile\_unit_handler.scss .\%1\scss
+    copy .\makefile\_mixin_margin.scss .\%1\scss
     copy .\makefile\font\demo.css .\%1\font
     copy .\makefile\font\demo_index.html .\%1\font
     copy .\makefile\font\iconfont.css .\%1\font

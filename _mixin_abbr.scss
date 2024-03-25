@@ -49,3 +49,23 @@
     $align_content
   );
 }
+
+// MarginTop
+@mixin mat($margin_top: $DEFAULT_UNIT) {
+  @include setMarginTop($margin_top);
+}
+
+// MarginRight
+@mixin mar($margin_right: $DEFAULT_UNIT) {
+  @include setMarginRight($margin_right);
+}
+
+// MarginBottom
+@mixin mab($margin_bottom: $DEFAULT_UNIT) {
+  @include setMarginBottom($margin_bottom);
+}
+
+// MarginLeft
+@mixin mal($margin_left: $DEFAULT_UNIT) {
+  @include setMarginLeft($margin_left);
+}

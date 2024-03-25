@@ -24,19 +24,3 @@
     }
   }
 }
-
-// 这个混合宏 _unit_selector 用于处理选择器的属性值的单位。它接受多个参数，包括属性名称 $handler、属性值 $handler_value，以及可选的 $using_unit 和 $default_unit。根据配置，混合宏会根据不同的情况设置属性值。
-// 如果 $using_unit 的值为 false，即不使用单位，则将属性值设置为 0。
-// 如果 $using_unit 的值为 true，即使用单位，则直接将属性值设置为 $handler_value。
-@mixin _unit_selector(
-  $handler,
-  $handler_value,
-  $using_unit: $USING_UNIT,
-  $default_unit: $DEFAULT_UNIT
-) {
-  @if $using_unit == false {
-    #{$handler}: 0; // 不使用单位时将属性值设置为 0
-  } @else {
-    #{$handler}: $handler_value; // 使用单位时直接设置属性值
-  }
-}

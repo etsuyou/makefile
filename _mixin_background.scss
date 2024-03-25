@@ -16,7 +16,7 @@
   @include _unit_handler(width, $width);
   @include _unit_handler(height, $height);
   background-color: $background_color;
-  @include _unit_selector(border-radius, $border_radius);
+  @include _unit_handler(border-radius, $border_radius);
 }
 // 设置div色块的长宽/背景色/边框
 // 默认宽度为屏幕宽度
