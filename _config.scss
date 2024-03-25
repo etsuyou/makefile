@@ -1,2 +1,12 @@
-$USING_UNIT:true;
-$DEFAULT_UNIT:0rem;
+// 当使用默认的以下配置时：
+// $USING_UNIT:true;
+// $DEFAULT_UNIT:0rem;
+// 默认会使用flexible.js自动适配屏幕宽度
+// 如不需要媒体查询自动适配，可以配置成：
+// $USING_UNIT:false;
+// $DEFAULT_UNIT:0rem; //此时该项无效
+// 或者
+// $USING_UNIT:true;
+// $DEFAULT_UNIT:0px; //此时该项生效，默认单位是px
+$USING_UNIT: true;
+$DEFAULT_UNIT: 0rem;
