@@ -7,8 +7,8 @@
 ### git 版（推荐）
 
 - 1.在项目文件夹下右击打开 git bash 终端
-- 2.git bash 终端中输入`git clone git@github.com:etsuyou/etsu-make.git`下载 makefile 文件
-- 3.git bash 终端中输入指令：`./etsu-make/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./etsu-make/makefile.bat test`完成新建
+- 2.git bash 终端中输入`git clone git@github.com:etsuyou/etsuyou-make.git`下载 makefile 文件
+- 3.git bash 终端中输入指令：`./etsuyou-make/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./etsuyou-make/makefile.bat test`完成新建
   - 注：20240302 以后新增缺省待新建文件夹名称默认创建`Default_Test`文件夹功能
 
 ### 离线版
@@ -17,7 +17,7 @@
 - 2.将 makefile 文件夹复制或移动到该项目文件夹下
 - 3.右键使用 vscode 打开该文件夹，或将该项目文件夹拖动到 vscode 图标上打开项目文件夹
 - 4.在 vscode 中新建终端，或快捷键 ctrl+shift+`
-- 5.输入指令：`./etsu-make/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./etsu-make/makefile.bat test`
+- 5.输入指令：`./etsuyou-make/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./etsuyou-make/makefile.bat test`
   - 注：20240302 以后新增缺省待新建文件夹名称默认创建`Default_Test`文件夹功能
 
 ## 更新说明

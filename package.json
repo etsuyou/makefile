@@ -1,5 +1,5 @@
 {
-  "name": "etsu-make",
+  "name": "etsuyou-make",
   "version": "1.0.0",
   "description": "A package helping you to create the project with Scss and SCSS templates.",
   "main": "flexible.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/etsuyou/etsu-make.git"
+    "url": "git+https://github.com/etsuyou/etsuyou-make.git"
   },
   "keywords": [
     "Sass",
@@ -17,7 +17,7 @@
   "author": "etsuyou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/etsuyou/etsu-make/issues"
+    "url": "https://github.com/etsuyou/etsuyou-make/issues"
   },
-  "homepage": "https://github.com/etsuyou/etsu-make#readme"
+  "homepage": "https://github.com/etsuyou/etsuyou-make#readme"
 }
