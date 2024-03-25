@@ -1,4 +1,5 @@
 @import "_config";
+@import "_unit_handler";
 
 // 设置div色块的长宽/背景色/边框
 // @include bg(100px, 200px)
@@ -11,24 +12,8 @@
   $background_color: transparent,
   $border_radius: $DEFAULT_UNIT
 ) {
-  @if $USING_UNIT==false or unit($width) != "" {
-    width: $width;
-  } @else {
-    @if unit($width) != "rem" {
-      width: ($DEFAULT_UNIT + $width)/100;
-    } @else {
-      width: $DEFAULT_UNIT + $width;
-    }
-  }
-  @if $USING_UNIT==false or unit($height) != "" {
-    height: $height;
-  } @else {
-    @if unit($height) != "rem" {
-      height: ($DEFAULT_UNIT + $height)/100;
-    } @else {
-      height: $DEFAULT_UNIT + $height;
-    }
-  }
+  @include _unit_handler(width,$width);
+  @include _unit_handler(height,$height);
   background-color: $background_color;
   border-radius: $border_radius;
 }
