@@ -11,7 +11,11 @@
 }
 
 // Full BackGround
-@mixin fubg($height, $background_color: transparent, $border_radius: $DEFAULT_UNIT) {
+@mixin fubg(
+  $height,
+  $background_color: transparent,
+  $border_radius: $DEFAULT_UNIT
+) {
   @include setFullWidthBackground($height, $background_color, $border_radius);
 }
 

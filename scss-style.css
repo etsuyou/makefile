@@ -2,7 +2,7 @@
 /* scss-style.css文件由scss-style.scss自动生成 */
 #header_wrapper {
   width: 100%;
-  height: 2rem;
+  height: 200rem;
   background-color: red;
   border-radius: 0rem;
   display: flex;
@@ -14,8 +14,8 @@
 }
 
 #header_wrapper #header_main {
-  width: 5rem;
-  height: 1rem;
+  width: 500rem;
+  height: 100rem;
   background-color: yellow;
   border-radius: 0rem;
   display: flex;
@@ -27,8 +27,8 @@
 }
 
 #header_wrapper #header_main .square {
-  width: 1rem;
-  height: 1rem;
+  width: 100rem;
+  height: 100rem;
   background-color: green;
   border-radius: 0rem;
 }
