@@ -9,6 +9,6 @@
 ){
   position: fixed;
   left: 50%;
-  transform: translateX($main_page_width/2);
+  transform: translateX(calc(#{$main_page_width}/2));
   @include _unit_handler(top,$top_offset);
 }
