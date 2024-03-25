@@ -11,12 +11,12 @@
   $background_color: transparent,
   $border_radius: $DEFAULT_UNIT
 ) {
-  @if $USING_REM==false or unit($width)!=""{
+  @if $USING_UNIT==false or unit($width)!=""{
     width: $width;
   }@else{
     width: ($DEFAULT_UNIT+$width)/100;
   }
-  @if $USING_REM==false or unit($height)!=""{
+  @if $USING_UNIT==false or unit($height)!=""{
     height: $height;
   }@else{
     height: ($DEFAULT_UNIT+$height)/100;
