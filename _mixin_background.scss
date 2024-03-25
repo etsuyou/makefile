@@ -11,14 +11,12 @@
   $background_color: transparent,
   $border_radius: $DEFAULT_UNIT
 ) {
-  @if $USING_REM==true and unit($width)!="" {
-    // 有单位的话直接赋值
+  @if $USING_REM==false or unit($width)!=""{
     width: $width;
   }@else{
-    // 没有单位默认添加rem
     width: ($DEFAULT_UNIT+$width)/100;
   }
-  @if $USING_REM==true and unit($height)!=""  {
+  @if $USING_REM==false or unit($height)!=""{
     height: $height;
   }@else{
     height: ($DEFAULT_UNIT+$height)/100;
