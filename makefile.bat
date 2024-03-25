@@ -15,7 +15,6 @@ if "%1" == "" (
   copy .\makefile\functions.js .\Default_Test\js
   copy .\makefile\style.css .\Default_Test\css
   copy .\makefile\global.css .\Default_Test\css
-  copy .\makefile\scss-style.scss .\Default_Test\scss
   copy .\makefile\scss-style.sass .\Default_Test\scss
   copy .\makefile\scss-style.css .\Default_Test\scss
   copy .\makefile\_mixin.scss .\Default_Test\scss
@@ -63,7 +62,6 @@ if "%1" == "" (
     copy .\makefile\functions.js .\%1\js
     copy .\makefile\style.css .\%1\css
     copy .\makefile\global.css .\%1\css
-    copy .\makefile\scss-style.scss .\%1\scss
     copy .\makefile\scss-style.sass .\%1\scss
     copy .\makefile\scss-style.css .\%1\scss
     copy .\makefile\_mixin.scss .\%1\scss
