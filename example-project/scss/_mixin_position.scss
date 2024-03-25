@@ -1,0 +1,10 @@
+@import "_config";
+@import "_unit_handler";
+
+// +pof($main_page_width,6rem)
+@mixin setPositionFixed($main_page_width, $top_offset) {
+  position: fixed;
+  left: 50%;
+  transform: translateX(calc(#{$main_page_width}/ 2));
+  @include _unit_handler(top, $top_offset);
+}
