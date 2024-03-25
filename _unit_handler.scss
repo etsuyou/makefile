@@ -18,3 +18,16 @@
     }
   }
 }
+
+@mixin _unit_selector(
+  $handler,
+  $handler_value,
+  $using_unit: $USING_UNIT,
+  $default_unit: $DEFAULT_UNIT
+) {
+  @if $using_unit==false {
+    #{$handler}: 0;
+  } @else {
+    #{$handler}: $handler_value;
+  }
+}
