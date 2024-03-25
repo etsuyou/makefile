@@ -1,0 +1,71 @@
+// 本文件是常用mixin的缩写，功能与原来混合器完全相同
+@import "_mixin";
+
+// BackGround
+@mixin bg(
+  $width,
+  $height,
+  $background_color: transparent,
+  $border_radius: $DEFAULT_UNIT
+) {
+  @include setBackground($width, $height, $background_color, $border_radius);
+}
+
+// Full BackGround
+@mixin fubg(
+  $height,
+  $background_color: transparent,
+  $border_radius: $DEFAULT_UNIT
+) {
+  @include setFullWidthBackground($height, $background_color, $border_radius);
+}
+
+// FlexCenter
+@mixin flc(
+  $flex_direction: row,
+  $justify_content: space-evenly,
+  $align_items: center,
+  $align_content: space-evenly
+) {
+  @include setFlexCenter(
+    $flex_direction,
+    $justify_content,
+    $align_items,
+    $align_content
+  );
+}
+
+// FlexBetween
+@mixin flb(
+  $flex_direction: row,
+  $justify_content: space-between,
+  $align_items: center,
+  $align_content: space-between
+) {
+  @include setFlexBetween(
+    $flex_direction,
+    $justify_content,
+    $align_items,
+    $align_content
+  );
+}
+
+// MarginTop
+@mixin mat($margin_top: $DEFAULT_UNIT) {
+  @include setMarginTop($margin_top);
+}
+
+// MarginRight
+@mixin mar($margin_right: $DEFAULT_UNIT) {
+  @include setMarginRight($margin_right);
+}
+
+// MarginBottom
+@mixin mab($margin_bottom: $DEFAULT_UNIT) {
+  @include setMarginBottom($margin_bottom);
+}
+
+// MarginLeft
+@mixin mal($margin_left: $DEFAULT_UNIT) {
+  @include setMarginLeft($margin_left);
+}
