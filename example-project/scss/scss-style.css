@@ -6,14 +6,12 @@
   background-color: red;
   border-radius: 0rem;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  align-content: space-evenly;
 }
 
-#header_wrapper #header_main {
+#header_wrapper .header_main_1 {
   width: 11rem;
   height: 10rem;
   background-color: yellow;
@@ -26,11 +24,31 @@
   align-content: space-between;
 }
 
-#header_wrapper #header_main .square {
+#header_wrapper .header_main_1 .square {
   width: 1rem;
   height: 1rem;
   background-color: green;
   border-radius: 0rem;
+}
+
+#header_wrapper .header_main_2 {
+  width: 11rem;
+  height: 10rem;
+  background-color: yellow;
+  border-radius: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+#header_wrapper .header_main_2 .circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  border-radius: 50%;
 }
 
 #floating_window {

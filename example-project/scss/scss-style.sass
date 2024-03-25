@@ -10,12 +10,20 @@
 // sass-convert ./_mixin_abbr.scss ./_mixin_abbr.sass
 #header_wrapper
   +fubg(200,red)
-  +flc()
-  #header_main
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  .header_main_1
     +bg($main_page_width,1000,yellow)
     +flb()
     .square
       +bg(100,100,green)
+  .header_main_2
+    +bg($main_page_width,1000,yellow)
+    +flc()
+    .circle
+      +bg(100,100,green,50%)
 
 #floating_window
   +bg(100,200,purple)
