@@ -14,12 +14,22 @@
   @if $USING_UNIT==false or unit($width)!=""{
     width: $width;
   }@else{
-    width: ($DEFAULT_UNIT+$width)/100;
+    @if unit($width)=="rem"{
+      width: ($DEFAULT_UNIT+$width)/100;
+    }
+    @else{
+      width: $DEFAULT_UNIT+$width;
+    }
   }
   @if $USING_UNIT==false or unit($height)!=""{
     height: $height;
   }@else{
-    height: ($DEFAULT_UNIT+$height)/100;
+    @if unit($height)=="rem"{
+      height: ($DEFAULT_UNIT+$height)/100;
+    }
+    @else{
+      height: $DEFAULT_UNIT+$height;
+    }
   }
   background-color: $background_color;
   border-radius: $border_radius;
