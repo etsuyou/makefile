@@ -6,6 +6,7 @@
 // @include bg(100px, 200px, red)
 // @include bg(100px, 200px, red, 20px)
 // @include bg(100px, 200px, red, 50%)
+// 当设置了config参数可以省略单位
 @mixin setBackground(
   $width,
   $height,
@@ -23,6 +24,7 @@
 // @include fbg(200px, red)
 // @include fbg(200px, red, 20px)
 // @include fbg(200px, red, 50%)
+// 当设置了config参数可以省略单位
 @mixin setFullWidthBackground(
   $height,
   $background_color: transparent,
