@@ -14,7 +14,7 @@
   @if $USING_UNIT==false or unit($width) != "" {
     width: $width;
   } @else {
-    @if unit($width) == "rem" {
+    @if unit($width) != "rem" {
       width: ($DEFAULT_UNIT + $width)/100;
     } @else {
       width: $DEFAULT_UNIT + $width;
@@ -23,7 +23,7 @@
   @if $USING_UNIT==false or unit($height) != "" {
     height: $height;
   } @else {
-    @if unit($height) == "rem" {
+    @if unit($height) != "rem" {
       height: ($DEFAULT_UNIT + $height)/100;
     } @else {
       height: $DEFAULT_UNIT + $height;
