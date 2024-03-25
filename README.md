@@ -7,7 +7,7 @@
 ### git 版（推荐）
 
 - 1.在项目文件夹下右击打开 git bash 终端
-- 2.git bash 终端中输入`git clone git@github.com:etsuyou/makefile.git`下载 makefile 文件
+- 2.git bash 终端中输入`git clone git@github.com:etsuyou/etsu-make.git`下载 makefile 文件
 - 3.git bash 终端中输入指令：`./makefile/makefile.bat + 空格 + <待新建文件夹名称>`，例如：`./makefile/makefile.bat test`完成新建
   - 注：20240302 以后新增缺省待新建文件夹名称默认创建`Default_Test`文件夹功能
 
@@ -24,10 +24,11 @@
 
 ### 20240325
 
-- 增加 rem 支持
+- 增加 rem 支持功能
 - 增加 config 配置默认单位
 - 格式化文档，美化结构
 - 增加了一些注释
+- 上传 npm 仓库
 
 ### 20240324
 
@@ -47,12 +48,9 @@
 - 增加`functions.js`文件
 - 增加 font 矢量图片文字文件夹
 - 增加了缺省文件名时创建`Default_Test`文件夹功能
-  - ![image](https://github.com/etsuyou/makefile/assets/156873223/aa789264-ac66-439b-9c61-63eb095826e3)
 - 增加创建完成时的提示语
-  - ![image](https://github.com/etsuyou/makefile/assets/156873223/57c866d4-d10c-45e7-83fc-6ef58b2705c0)
 
 ### 20240228
 
 - 增加`-help`和`-h`帮助指令
 - 增加任务完成后 Mission completed 提示
-  - ![image](https://github.com/etsuyou/makefile/assets/156873223/3b21c133-2f7f-4bf6-98d6-23a9f31cb921)
