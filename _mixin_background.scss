@@ -12,8 +12,8 @@
   $background_color: transparent,
   $border_radius: $DEFAULT_UNIT
 ) {
-  @include _unit_handler(width,$width);
-  @include _unit_handler(height,$height);
+  @include _unit_handler(width, $width);
+  @include _unit_handler(height, $height);
   background-color: $background_color;
   border-radius: $border_radius;
 }

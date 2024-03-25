@@ -3,17 +3,17 @@
 @mixin _unit_handler(
   $handler,
   $handler_value,
-  $using_unit:$USING_UNIT,
-  $default_unit:$DEFAULT_UNIT
-){
-  @if $using_unit==false{
+  $using_unit: $USING_UNIT,
+  $default_unit: $DEFAULT_UNIT
+) {
+  @if $using_unit==false {
     #{$handler}: $handler_value;
-  }@else{
-    @if unit($handler_value) == "" and $default_unit == 0rem{
+  } @else {
+    @if unit($handler_value) == "" and $default_unit == 0rem {
       #{$handler}: ($default_unit + $handler_value)/100;
-    }@else if unit($handler_value) == "" and $default_unit != 0rem{
+    } @else if unit($handler_value) == "" and $default_unit != 0rem {
       #{$handler}: $default_unit + $handler_value;
-    }@else{
+    } @else {
       #{$handler}: $handler_value;
     }
   }
