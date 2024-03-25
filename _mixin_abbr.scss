@@ -5,13 +5,13 @@
   $width,
   $height,
   $background_color: transparent,
-  $border_radius: 0rem
+  $border_radius: $DEFAULT_UNIT
 ) {
   @include setBackground($width, $height, $background_color, $border_radius);
 }
 
 // Full BackGround
-@mixin fubg($height, $background_color: transparent, $border_radius: 0rem) {
+@mixin fubg($height, $background_color: transparent, $border_radius: $DEFAULT_UNIT) {
   @include setFullWidthBackground($height, $background_color, $border_radius);
 }
 

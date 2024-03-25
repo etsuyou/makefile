@@ -1,0 +1,41 @@
+@import "_config";
+
+// 设置div色块的长宽/背景色/边框
+// @include bg(100px, 200px)
+// @include bg(100px, 200px, red)
+// @include bg(100px, 200px, red, 20px)
+// @include bg(100px, 200px, red, 50%)
+@mixin setBackground(
+  $width,
+  $height,
+  $background_color: transparent,
+  $border_radius: $DEFAULT_UNIT
+) {
+  @if $USING_REM==true and unit($width)!="" {
+    // 有单位的话直接赋值
+    width: $width;
+  }@else{
+    // 没有单位默认添加rem
+    width: ($DEFAULT_UNIT+$width)/100;
+  }
+  @if $USING_REM==true and unit($height)!=""  {
+    height: $height;
+  }@else{
+    height: ($DEFAULT_UNIT+$height)/100;
+  }
+  background-color: $background_color;
+  border-radius: $border_radius;
+}
+// 设置div色块的长宽/背景色/边框
+// 默认宽度为屏幕宽度
+// @include fbg(200px)
+// @include fbg(200px, red)
+// @include fbg(200px, red, 20px)
+// @include fbg(200px, red, 50%)
+@mixin setFullWidthBackground(
+  $height,
+  $background_color: transparent,
+  $border_radius: $DEFAULT_UNIT
+) {
+  @include setBackground(100%, $height, $background_color, $border_radius);
+}
