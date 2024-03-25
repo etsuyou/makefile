@@ -16,9 +16,11 @@
     #{$handler}: $handler_value; // 不使用单位时直接设置属性值
   } @else {
     @if unit($handler_value) == "" and $default_unit == 0rem {
-      #{$handler}: ($default_unit + $handler_value) / 100; // 如果属性值没有单位且默认单位为 0rem，则将属性值除以 100
+      #{$handler}: ($default_unit + $handler_value) /
+        100; // 如果属性值没有单位且默认单位为 0rem，则将属性值除以 100
     } @else if unit($handler_value) == "" and $default_unit != 0rem {
-      #{$handler}: $default_unit + $handler_value; // 如果属性值没有单位且默认单位不为 0rem，则将默认单位和属性值拼接
+      #{$handler}: $default_unit +
+        $handler_value; // 如果属性值没有单位且默认单位不为 0rem，则将默认单位和属性值拼接
     } @else {
       #{$handler}: $handler_value; // 属性值有单位时直接设置属性值
     }
