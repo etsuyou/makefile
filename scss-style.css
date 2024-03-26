@@ -1,54 +1,13 @@
 @charset "UTF-8";
 /* scss-style.css文件由scss-style.scss自动生成 */
-#header_wrapper {
+#app {
   width: 100%;
-  height: 2rem;
+  height: 0.5rem;
   background-color: red;
   border-radius: 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-}
-
-#header_wrapper .header_main_1 {
-  width: 10rem;
-  height: 10rem;
-  background-color: yellow;
-  border-radius: 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-}
-
-#header_wrapper .header_main_1 .square {
-  width: 1rem;
-  height: 1rem;
-  background-color: green;
-  border-radius: 0rem;
-}
-
-#header_wrapper .header_main_2 {
-  width: 10rem;
-  height: 10rem;
-  background-color: yellow;
-  border-radius: 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: space-evenly;
-}
-
-#header_wrapper .header_main_2 .circle {
-  width: 1rem;
-  height: 1rem;
-  background-color: green;
-  border-radius: 50%;
 }
 
 #floating_window {
