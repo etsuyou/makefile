@@ -14,7 +14,6 @@ if "%1" == "" (
   copy .\etsuyou-make\flexible.js .\Default_Test\js
   copy .\etsuyou-make\functions.js .\Default_Test\js
   copy .\etsuyou-make\style.css .\Default_Test\css
-  copy .\etsuyou-make\global.css .\Default_Test\css
   copy .\etsuyou-make\reset.css .\Default_Test\css
   copy .\etsuyou-make\scss-style.sass .\Default_Test\scss
   copy .\etsuyou-make\scss-style.css .\Default_Test\scss
@@ -59,7 +58,6 @@ if "%1" == "" (
     copy .\etsuyou-make\flexible.js .\%1\js
     copy .\etsuyou-make\functions.js .\%1\js
     copy .\etsuyou-make\style.css .\%1\css
-    copy .\etsuyou-make\global.css .\%1\css
     copy .\etsuyou-make\reset.css .\%1\css
     copy .\etsuyou-make\scss-style.sass .\%1\scss
     copy .\etsuyou-make\scss-style.css .\%1\scss
