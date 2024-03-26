@@ -12,7 +12,7 @@
 }
 
 #header_wrapper .header_main_1 {
-  width: 11rem;
+  width: 10rem;
   height: 10rem;
   background-color: yellow;
   border-radius: 0rem;
@@ -32,7 +32,7 @@
 }
 
 #header_wrapper .header_main_2 {
-  width: 11rem;
+  width: 10rem;
   height: 10rem;
   background-color: yellow;
   border-radius: 0rem;
@@ -58,6 +58,6 @@
   border-radius: 0rem;
   position: fixed;
   left: 50%;
-  transform: translateX(calc(11rem/ 2));
+  transform: translateX(calc(10rem/ 2));
   top: 6rem;
 }
