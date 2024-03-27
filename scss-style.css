@@ -2,7 +2,7 @@
 /* scss-style.css文件由scss-style.scss自动生成 */
 #app {
   width: 100%;
-  height: 100px;
+  height: 37px;
   background-color: red;
   border-radius: 0px;
   display: flex;
@@ -12,7 +12,7 @@
 
 #app header {
   width: 1160px;
-  height: 100px;
+  height: 37px;
   background-color: green;
   border-radius: 0px;
 }
