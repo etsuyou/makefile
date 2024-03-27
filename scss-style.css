@@ -2,28 +2,28 @@
 /* scss-style.css文件由scss-style.scss自动生成 */
 #app {
   width: 100%;
-  height: 38px;
+  height: 37px;
   background-color: red;
-  border-radius: 0rem;
+  border-radius: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #app header {
-  width: 10rem;
-  height: 38px;
-  background-color: yellow;
-  border-radius: 0rem;
+  width: 1160px;
+  height: 37px;
+  background-color: green;
+  border-radius: 0px;
 }
 
 #floating_window {
-  width: 1rem;
-  height: 2rem;
+  width: 100px;
+  height: 200px;
   background-color: purple;
-  border-radius: 0rem;
+  border-radius: 0px;
   position: fixed;
   left: 50%;
-  transform: translateX(calc(10rem/ 2));
+  transform: translateX(calc(1160px/ 2));
   top: 6rem;
 }

@@ -34,8 +34,17 @@
 }
 
 // 设置所有子元素默认横向居中对齐
-@mixin app(){
+@mixin app() {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin setMainBackground(
+  $height,
+  $background_color: transparent,
+  $width: $MAIN_PAGE_WIDTH,
+  $border_radius: $DEFAULT_UNIT
+) {
+  @include setBackground($width,$height,$background_color,$border_radius);
 }

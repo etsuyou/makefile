@@ -9,10 +9,11 @@
 // sass-convert ./_mixin.scss ./_mixin.sass
 // sass-convert ./_mixin_abbr.scss ./_mixin_abbr.sass
 #app
-  +fubg(38px,red)
+  $header_width:37px
+  +fubg($header_width,red)
   +app()
   header
-    +bg($MAIN_PAGE_WIDTH,38px,yellow)
+    +mabg($header_width,green)
 
 #floating_window
   +bg(100,200,purple)
